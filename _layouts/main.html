@@ -3,59 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-            <div class="phone">
-                <p><i class="fas fa-mobile-alt"></i> +359 888 123 456</p>
-            </div>
-            <div class="location">
-                <p><i class="fas fa-map-marker-alt"></i> Bulgaria, Varna, 11 Slivnitsa Blvd.</p>
-            </div>
-            <div class="socials">
-                <p>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </p>
-            </div>
-        </header>
+    {% include header.html %}
 
     <section class="head">
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#">Skipper</a></li>
-                <li><a href="#">Yacht</a></li>
-                <li><a href="#">Destination</a></li>
-                <li><a href="form.html">Book</a></li>
-            </ul>
-        </nav>
+
+        {% include navigation.html %}
 
         <h1 class="title">Daily yacht cruises</h1>
         <p class="slogan">Best way to falling in love with the sea.</p>
         <a class="cta-button" href="form.html">Book Now!</a>
     </section>
 
-
-
-    
-
-            {{content}}
-       
-       
-       
-       
-       
-       
-       
-        <footer class="site-footer">
-        <p>&copy 2019 All rights reserved.</p>
-            <script> </script>
-        </footer>
+    {{content}}
+    {% include footer.html %}
 
     </div>
     <script src="{{ site.baseurl }}/scripts/site.js"></script>
