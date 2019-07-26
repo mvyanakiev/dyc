@@ -4,4 +4,4 @@ _site
 .idea
 .idea/.
 node_modules
-.DS*
+.DS_Store
