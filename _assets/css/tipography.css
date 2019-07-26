@@ -13,33 +13,27 @@ html {
     color: var(--main-background);
 }
 
-h1.title{
+h1.title {
     font: 4.5rem PT Serif, serif;
-    /*color: #a11c27;*/
-    /*color: var(--index-title-color);*/
     color: #FFFFFF;
     font-weight: 900;
     margin: 1em auto 0 auto;
     letter-spacing: 0.03em;
-    /*-webkit-text-stroke: 2px white;*/
-    /*text-shadow: 0 0 10px rgba(0,0,0,0.8);*/
-    /*text-transform: uppercase;*/
     z-index: 20;
 }
 
-.slogan{
+.slogan {
     color: white;
     text-align: center;
     margin: 2.0em auto 1em auto;
     font-size: 2em;
     width: 35%;
-    text-shadow: 0 0 10px rgba(0,0,0,0.8);
-    z-index: 20;font-style: italic;
-    /*-webkit-text-stroke: 1px white;*/
-    /*text-transform: uppercase;*/
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    font-style: italic;
 }
 
-.cta-button{
+.cta-button {
     font-weight: 700;
     text-align: center;
     text-decoration: none;
@@ -55,12 +49,12 @@ h3 {
     letter-spacing: 0.05em;
 }
 
-h2{
+h2 {
     font-size: 2.5em;
     text-align: center;
 }
 
-div.container-element p{
+div.container-element p {
     text-align: center;
     color: #666666;
     font-size: 5em;
@@ -73,25 +67,25 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--nav-color-text);
-    text-shadow: 0 0 2px rgba(0,0,0,0.7);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
     font-weight: 700;
     padding: 1em 2em;
     transition: color ease-in-out 0.3s, text-shadow ease-in-out 0.3s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: white;
-    text-shadow: 0 0 8px rgba(0,0,0,1);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
 
-p.name{
+p.name {
     font-size: 1.3em;
     text-align: center;
     font-weight: 700;
-    margin: 1em  auto 0.2em auto;
+    margin: 1em auto 0.2em auto;
 }
 
-p.position{
+p.position {
     font-size: 1em;
     font-style: italic;
     text-align: center;
@@ -99,18 +93,28 @@ p.position{
     margin: 0 auto 0.5em auto;
 }
 
-p.description{
+p.description {
     color: #666666;
     margin-top: 1.5em;
     padding: 0 2em;
 }
 
-.submit-button{
+.submit-button {
     font-size: 1.1em;
     font-weight: 700;
     letter-spacing: 0.05em;
 }
 
-footer{
+footer {
     color: #FFFFFF;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color ease-in-out 0.3s;
+}
+
+footer a:hover {
+    color: var(--main-background);
 }
