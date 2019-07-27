@@ -33,6 +33,11 @@ h1.title {
     font-style: italic;
 }
 
+.forForm {
+    width: 90%;
+    margin: 1.5em auto;
+}
+
 .cta-button {
     font-weight: 700;
     text-align: center;
