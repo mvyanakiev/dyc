@@ -72,7 +72,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--nav-color-text);
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
     font-weight: 700;
     padding: 1em 2em;
     transition: color ease-in-out 0.3s, text-shadow ease-in-out 0.3s;
