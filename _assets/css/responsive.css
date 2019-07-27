@@ -1,0 +1,67 @@
+@media screen and (max-width: 420px) {
+
+    html{
+        font-size: 12px;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .phone,
+    .location,
+    .socials {
+        padding: 0;
+        text-align: center;
+        margin: 0.5em auto;
+    }
+
+    .socials p i{
+        padding: 0 2em;
+    }
+
+    nav ul {
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 1em auto;
+    }
+
+    nav ul li a {
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+    .slogan {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .cta-button {
+        width: 25%;
+    }
+
+    .key-points .container-element,
+    .offer-element {
+        flex: 0 0 90%;
+    }
+
+    p.description {
+        margin-top: 1em;
+    }
+
+
+
+
+
+
+
+}

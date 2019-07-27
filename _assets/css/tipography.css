@@ -20,6 +20,7 @@ h1.title {
     margin: 1em auto 0 auto;
     letter-spacing: 0.03em;
     z-index: 20;
+    text-align: center;
 }
 
 .slogan {
