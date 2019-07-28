@@ -1,14 +1,15 @@
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
 
-    html{
+    html {
         font-size: 12px;
+        color: red;
     }
 
-    body{
+    body {
         width: 100%;
     }
 
-    header{
+    header {
         flex-direction: column;
     }
 
@@ -20,8 +21,9 @@
         margin: 0.5em auto;
     }
 
-    .socials p i{
-        padding: 0 2em;
+    .socials {
+        display: flex;
+        justify-content: space-between;
     }
 
     nav ul {
@@ -37,7 +39,7 @@
 
     nav ul li a {
         padding: 0;
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
 
     .slogan {
@@ -49,6 +51,18 @@
         width: 25%;
     }
 
+    html body.loaded main section.key-points div.container-element div.icon {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2.0em;
+    }
+
+    p.name {
+        font-size: 1.7em;
+    }
+
     .key-points .container-element,
     .offer-element {
         flex: 0 0 90%;
@@ -56,12 +70,191 @@
 
     p.description {
         margin-top: 1em;
+        font-size: 1.2em;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    .submit-button {
+        width: 25%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+
+    html {
+        font-size: 14px;
+        color: green;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .phone,
+    .location,
+    .socials {
+        padding: 0;
+        text-align: center;
+        margin: 0.5em auto;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 1em auto;
+    }
+
+    nav ul li a {
+        padding: 0;
+        font-size: 1.8em;
+    }
+
+    .slogan {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .cta-button {
+        width: 25%;
+    }
+
+    html body.loaded main section.key-points div.container-element div.icon {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2.0em;
+    }
+
+    p.name {
+        font-size: 1.7em;
+    }
+
+    .key-points .container-element,
+    .offer-element {
+        flex: 0 0 90%;
+    }
+
+    p.description {
+        margin-top: 1em;
+        font-size: 1.2em;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    .submit-button {
+        width: 25%;
     }
 
 
+}
 
 
 
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+
+    html {
+        font-size: 16px;
+        color: orange;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .phone,
+    .location,
+    .socials {
+        padding: 0;
+        text-align: center;
+        margin: 0.5em auto;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 1em auto;
+    }
+
+    nav ul li a {
+        padding: 0;
+        font-size: 1.8em;
+    }
+
+    .slogan {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .cta-button {
+        width: 25%;
+    }
+
+    html body.loaded main section.key-points div.container-element div.icon {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2.0em;
+    }
+
+    p.name {
+        font-size: 1.7em;
+    }
+
+    .key-points .container-element,
+    .offer-element {
+        flex: 0 0 90%;
+    }
+
+    p.description {
+        margin-top: 1em;
+        font-size: 1.2em;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    .submit-button {
+        width: 25%;
+    }
 
 
 }
