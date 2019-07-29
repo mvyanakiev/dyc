@@ -255,6 +255,20 @@
     .submit-button {
         width: 25%;
     }
+}
 
+@media screen and (max-width: 350px) {
 
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1em;
+        gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

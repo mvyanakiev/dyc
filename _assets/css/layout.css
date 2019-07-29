@@ -73,7 +73,7 @@ nav ul {
 }
 
 .cta-button{
-    width: 10%;
+    width: 15%;
     margin: 0 auto 2.5em auto;
     background: var(--cta-button-background);
     color: var(--cta-button-text-color);
