@@ -4,39 +4,36 @@
 
 layout: main
 title: Book now!
+slogan: Choose the date for your sailing
 ---
-<p class="slogan forForm">Choose the date for your sailing</p>
-</section>
 
 <main>
+    <div class="formWrapper">
+        <form action="#">
+            <fieldset>
+                <p class="heading">Create reservation</p>
 
-<div class="formWrapper">
+                <div class="forms">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" placeholder="John Smith" type="text">
+                </div>
 
-    <form action="#">
-        <fieldset>
-            <p class="heading">Create reservation</p>
+                <div class="forms">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" placeholder="you@email.com" type="email">
+                </div>
 
-            <div class="forms">
-                <label for="name">Your Name</label>
-                <input id="name" name="name" placeholder="John Smith" type="text">
-            </div>
+                <div class="forms">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" placeholder="555-123-5858" type="text">
+                </div>
 
-            <div class="forms">
-                <label for="email">Email</label>
-                <input id="email" name="email" placeholder="you@email.com" type="email">
-            </div>
-
-            <div class="forms">
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" placeholder="555-123-5858" type="text">
-            </div>
-
-            <div class="forms">
-                <label for="date">Desired date</label>
-                <input id="date" name="date" type="date">
-            </div>
-        </fieldset>
-    </form>
-        <a href="#" class="submit-button">Send It!</a>
-</div>
+                <div class="forms">
+                    <label for="date">Desired date</label>
+                    <input id="date" name="date" type="date">
+                </div>
+            </fieldset>
+        </form>
+        <a class="submit-button" href="#">Send It!</a>
+    </div>
 </main>

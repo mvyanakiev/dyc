@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Book now!</title>
     <link href="/dyc/css/style.css" rel="stylesheet">
 </head>
@@ -25,7 +26,6 @@
 </header>
 
     <section class="head">
-
         <nav>
     <ul>
         <li><a href="/dyc/">Home</a></li>
@@ -35,48 +35,44 @@
         <li><a href="form.html">Book</a></li>
     </ul>
 </nav>
-
         <p class="slogan forForm">Choose the date for your sailing</p>
-</section>
+    </section>
 
-<main>
+    <main>
+    <div class="formWrapper">
+        <form action="#">
+            <fieldset>
+                <p class="heading">Create reservation</p>
 
-<div class="formWrapper">
+                <div class="forms">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" placeholder="John Smith" type="text">
+                </div>
 
-    <form action="#">
-        <fieldset>
-            <p class="heading">Create reservation</p>
+                <div class="forms">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" placeholder="you@email.com" type="email">
+                </div>
 
-            <div class="forms">
-                <label for="name">Your Name</label>
-                <input id="name" name="name" placeholder="John Smith" type="text">
-            </div>
+                <div class="forms">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" placeholder="555-123-5858" type="text">
+                </div>
 
-            <div class="forms">
-                <label for="email">Email</label>
-                <input id="email" name="email" placeholder="you@email.com" type="email">
-            </div>
-
-            <div class="forms">
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" placeholder="555-123-5858" type="text">
-            </div>
-
-            <div class="forms">
-                <label for="date">Desired date</label>
-                <input id="date" name="date" type="date">
-            </div>
-        </fieldset>
-    </form>
-        <a href="#" class="submit-button">Send It!</a>
-</div>
+                <div class="forms">
+                    <label for="date">Desired date</label>
+                    <input id="date" name="date" type="date">
+                </div>
+            </fieldset>
+        </form>
+        <a class="submit-button" href="#">Send It!</a>
+    </div>
 </main>
-        <footer class="site-footer">
+    <footer class="site-footer">
     <p><a href="https://mvyanakiev.github.io/" target="_blank">&copy 2019 Milko Yanakiev. All rights reserved.</a></p>
     <script></script>
 </footer>
 
-        </div>
-        <script src="/dyc/scripts/site.js"></script>
+    <script src="/dyc/scripts/site.js"></script>
 </body>
 </html>
