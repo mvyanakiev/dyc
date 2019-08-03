@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>{{page.title}}</title>
+    <title>{{ page.title }}</title>
     <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -14,9 +14,16 @@
 
         {% include navigation.html %}
 
-        <h1 class="title">{{ page.title }}</h1>
+        {% if page.ht %}
+        <h1 class="title">{{ page.ht }}</h1>
+        {% endif %}
+
         <p class="slogan">{{ page.slogan }}</p>
+
+        {% if page.ht %}
         <a class="cta-button" href="form.html">Book Now!</a>
+        {% endif %}
+
     </section>
 
     {{content}}
