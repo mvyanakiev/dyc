@@ -28,26 +28,24 @@ fieldset{
 .forms{
     display: flex;
     margin: 1rem auto;
-    /*padding-right: 5rem;*/
     align-items: center;
-}
 
-.forms label{
-    flex: 1 1 1%;
-    display: inline-block;
-    align-items: center;
-    color: #FFFFFF;
-}
+    & label {
+        flex: 1 1 1%;
+        display: inline-block;
+        align-items: center;
+        color: #FFFFFF;
+    }
 
-.forms input {
-    flex: 1 0 9em;
-    /*border: 1px solid #666666;*/
-    padding: 0.5rem;
-    /*justify-items: left;*/
-    display: inline-block;
-    align-items: center;
-    border-radius: 0.5em;
-    border: none;
+    & input {
+        flex: 1 0 9em;
+        padding: 0.5rem;
+        display: inline-block;
+        align-items: center;
+        border-radius: 0.5em;
+        border: none;
+        color: #888888;
+    }
 }
 
 .submit-button{
@@ -62,13 +60,14 @@ fieldset{
     border-radius: 0.5em;
     text-align: center;
     transition: color ease-in-out 0.3s, background ease-in-out 0.3s;
-}
 
-.submit-button:hover {
-    background: #FFFFFF;
-    color: var(--main-color);
+    &:hover {
+        background: #FFFFFF;
+        color: var(--main-color);
+    }
 }
 
 [name='date']{
-    color: #888;
+    color: #888888;
+    opacity: 1;
 }
