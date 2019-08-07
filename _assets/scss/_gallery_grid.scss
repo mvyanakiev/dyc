@@ -36,6 +36,16 @@ ul.gallery li {
     justify-content: center;
     align-content: center;
     grid-auto-flow: dense;
+
+    @include bp(mobile) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1em;
+    }
+
+    @include bp(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1em;
+    }
 }
 
 .small{

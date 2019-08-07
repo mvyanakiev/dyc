@@ -338,6 +338,12 @@ html {
   box-sizing: border-box;
   font: 16px/1.2 "PT Sans", sans-serif;
   background: var(--main-background); }
+  @media (max-width: 480px) {
+    html {
+      font-size: 12px; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    html {
+      font-size: 14px; } }
 
 .socials > p > a {
   color: white;
@@ -367,19 +373,20 @@ h1.title {
   opacity: 0;
   transition-delay: 0.6s;
   transition: opacity 0.8s ease-in-out; }
+  @media (max-width: 480px) {
+    .slogan {
+      width: 90%;
+      margin: 1em auto; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .slogan {
+      width: 60%;
+      margin: 1em auto; } }
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .slogan {
+      width: 60%; } }
 
 body.loaded > section > p.slogan {
   opacity: 1; }
-
-.forForm {
-  width: 90%;
-  margin: 1.5em auto; }
-
-.cta-button {
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.1em; }
 
 h2 {
   font-size: 2.5em;
@@ -392,6 +399,12 @@ h3 {
   font-weight: 700;
   margin: 1em auto;
   letter-spacing: 0.05em; }
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 2.0em; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    h3 {
+      font-size: 2.0em; } }
 
 div.container-element p {
   text-align: center;
@@ -400,6 +413,12 @@ div.container-element p {
 
 nav ul li {
   cursor: pointer; }
+  @media (max-width: 480px) {
+    nav ul li {
+      margin: 1em auto; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    nav ul li {
+      margin: 1em auto; } }
   nav ul li a {
     text-decoration: none;
     color: var(--nav-color-text);
@@ -407,15 +426,40 @@ nav ul li {
     font-weight: 700;
     padding: 1em 2em;
     transition: color ease-in-out 0.3s, text-shadow ease-in-out 0.3s; }
+    @media (max-width: 480px) {
+      nav ul li a {
+        padding: 0;
+        font-size: 1.8em; } }
+    @media screen and (min-width: 481px) and (max-width: 640px) {
+      nav ul li a {
+        padding: 0;
+        font-size: 1.8em; } }
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+      nav ul li a {
+        padding: 1em 3.5em; } }
   nav ul li a:hover {
     color: white;
     text-shadow: 0 0 8px black; }
+
+@media (max-width: 480px) {
+  .fas {
+    font-size: 2.2em; } }
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  .fas {
+    font-size: 2em; } }
 
 .offer p.name {
   font-size: 1.3em;
   text-align: center;
   font-weight: 700;
   margin: 1em auto 0.2em auto; }
+  @media (max-width: 480px) {
+    .offer p.name {
+      font-size: 1.7em; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .offer p.name {
+      font-size: 1.7em; } }
 
 .offer p.position {
   font-size: 1em;
@@ -427,7 +471,25 @@ nav ul li {
 .offer p.description {
   color: #666666;
   margin-top: 1.5em;
-  padding: 0 2em; }
+  padding: 0 2em 1.5em 2em; }
+  @media (max-width: 480px) {
+    .offer p.description {
+      margin-top: 1em;
+      font-size: 1.2em; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .offer p.description {
+      margin-top: 1em;
+      font-size: 1.2em; } }
+
+.forForm {
+  width: 90%;
+  margin: 1.5em auto; }
+
+.cta-button {
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1em; }
 
 .submit-button {
   font-size: 1.1em;
@@ -450,6 +512,15 @@ body {
   width: 65em;
   margin: 0 auto;
   position: relative; }
+  @media (max-width: 480px) {
+    body {
+      width: 100%; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    body {
+      width: 100%; } }
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    body {
+      width: 100%; } }
 
 header {
   width: 100%;
@@ -460,15 +531,51 @@ header {
   padding: 0.8em 0;
   z-index: 20;
   /*position: fixed;*/ }
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    header {
+      flex-direction: column; } }
 
 .phone {
-  padding-left: 2em; }
+  padding-left: 2em;
+  color: var(--header-color-text); }
+  .phone a {
+    text-decoration: none; }
+  @media (max-width: 480px) {
+    .phone {
+      padding: 0;
+      text-align: center;
+      margin: 0.5em auto; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .phone {
+      padding: 0;
+      text-align: center;
+      margin: 0.5em auto; } }
 
 .socials {
   padding-right: 2em; }
+  @media (max-width: 480px) {
+    .socials {
+      padding: 0;
+      text-align: center;
+      margin: 0.5em auto;
+      display: flex;
+      justify-content: space-between; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .socials {
+      padding: 0;
+      text-align: center;
+      margin: 0.5em auto;
+      display: flex;
+      justify-content: space-between; } }
 
 .socials p i {
   padding-left: 1em; }
+
+.location {
+  text-align: center; }
 
 .head {
   background-image: url("../images/head-image-background.jpg");
@@ -507,6 +614,23 @@ nav {
     display: flex;
     margin-left: auto;
     justify-content: flex-end; }
+    @media (max-width: 480px) {
+      nav ul {
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0; } }
+    @media screen and (min-width: 481px) and (max-width: 640px) {
+      nav ul {
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0; } }
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+      nav ul {
+        margin: 0 auto;
+        justify-content: center;
+        padding-right: 0; } }
 
 .cta-button {
   width: 15%;
@@ -518,16 +642,18 @@ nav {
   padding: 0.8em;
   transition: color ease-in-out 0.3s, background ease-in-out 0.3s;
   z-index: 20; }
+  @media (max-width: 480px) {
+    .cta-button {
+      width: 25%; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .cta-button {
+      width: 25%; } }
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .cta-button {
+      width: 20%; } }
   .cta-button:hover {
     background: white;
     color: var(--main-color); }
-
-.key-points {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  background: #FFFFFF; }
 
 .container-title {
   flex: 0 0 100%;
@@ -542,10 +668,31 @@ h2::after {
   background: var(--main-color);
   margin: 1em auto 0 auto; }
 
-.key-points .container-element {
-  text-align: center;
-  flex: 0 0 25%;
+.key-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  background: #FFFFFF; }
+
+.container-element {
   margin-bottom: 3.5em; }
+
+.key-points,
+.container-element,
+.offer-element {
+  text-align: center;
+  flex: 0 0 25%; }
+  @media (max-width: 480px) {
+    .key-points,
+    .container-element,
+    .offer-element {
+      flex: 0 0 90%; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .key-points,
+    .container-element,
+    .offer-element {
+      flex: 0 0 90%; } }
 
 .offer {
   display: flex;
@@ -553,10 +700,6 @@ h2::after {
   justify-content: space-evenly;
   width: 100%;
   background: var(--offer-background); }
-  .offer-element {
-    text-align: center;
-    flex: 0 0 28%;
-    margin-bottom: 3.5em; }
   .offer-element .pic {
     position: relative;
     overflow: hidden;
@@ -591,14 +734,19 @@ form {
   border: none;
   border-radius: 0.5em;
   margin: 2em auto;
-  max-width: 35em;
-  vertical-align: center; }
+  vertical-align: center;
+  max-width: 35em; }
+  @media (max-width: 480px) {
+    form {
+      max-width: 90%; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    form {
+      max-width: 90%; } }
 
 fieldset {
   border: none; }
 
 .heading {
-  /*font-family: Georgia, serif;*/
   font-size: 2rem;
   text-align: center;
   color: white;
@@ -637,6 +785,12 @@ fieldset {
   .submit-button:hover {
     background: #FFFFFF;
     color: var(--main-color); }
+  @media (max-width: 480px) {
+    .submit-button {
+      width: 25%; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .submit-button {
+      width: 25%; } }
 
 [name='date'] {
   color: #888888;
@@ -676,6 +830,14 @@ ul.gallery li {
   justify-content: center;
   align-content: center;
   grid-auto-flow: dense; }
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1em; } }
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1em; } }
 
 .small {
   grid-row: span 1;
@@ -726,125 +888,3 @@ img.land {
 img.por {
   height: 100%;
   width: auto; }
-
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 12px; }
-  body {
-    width: 100%; }
-  header {
-    flex-direction: column; }
-  .phone,
-  .location,
-  .socials {
-    padding: 0;
-    text-align: center;
-    margin: 0.5em auto; }
-  .socials {
-    display: flex;
-    justify-content: space-between; }
-  nav ul {
-    margin: 0 auto;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0; }
-  nav ul li {
-    margin: 1em auto; }
-  nav ul li a {
-    padding: 0;
-    font-size: 1.8em; }
-  .slogan {
-    width: 90%;
-    margin: 1em auto; }
-  .cta-button {
-    width: 25%; }
-  html body.loaded main section.key-points div.container-element div.icon {
-    font-size: 2em; }
-  h3 {
-    font-size: 2.0em; }
-  p.name {
-    font-size: 1.7em; }
-  .key-points .container-element,
-  .offer-element {
-    flex: 0 0 90%; }
-  p.description {
-    margin-top: 1em;
-    font-size: 1.2em; }
-  form {
-    max-width: 90%; }
-  .submit-button {
-    width: 25%; } }
-
-@media screen and (min-width: 481px) and (max-width: 640px) {
-  html {
-    font-size: 14px;
-    /*color: green;*/ }
-  body {
-    width: 100%; }
-  header {
-    flex-direction: column; }
-  .phone,
-  .location,
-  .socials {
-    padding: 0;
-    text-align: center;
-    margin: 0.5em auto; }
-  .socials {
-    display: flex;
-    justify-content: space-between; }
-  nav ul {
-    margin: 0 auto;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0; }
-  nav ul li {
-    margin: 1em auto; }
-  nav ul li a {
-    padding: 0;
-    font-size: 1.8em; }
-  .slogan {
-    width: 90%;
-    margin: 1em auto; }
-  .cta-button {
-    width: 25%; }
-  html body.loaded main section.key-points div.container-element div.icon {
-    font-size: 2em; }
-  h3 {
-    font-size: 2.0em; }
-  p.name {
-    font-size: 1.7em; }
-  .key-points .container-element,
-  .offer-element {
-    flex: 0 0 90%; }
-  p.description {
-    margin-top: 1em;
-    font-size: 1.2em; }
-  form {
-    max-width: 90%; }
-  .submit-button {
-    width: 25%; } }
-
-@media screen and (min-width: 641px) and (max-width: 1024px) {
-  body {
-    max-width: 100%; }
-  nav ul {
-    margin: 0 auto;
-    justify-content: center; }
-  nav ul li a {
-    padding: 1em 3.5em; }
-  nav ul {
-    padding-right: 0; }
-  .slogan {
-    width: 60%; }
-  .cta-button {
-    width: 20%; } }
-
-@media screen and (max-width: 350px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1em;
-    gap: 0.5em; } }
-
-@media screen and (max-width: 650px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); } }

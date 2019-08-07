@@ -1,137 +1,217 @@
 html {
-    box-sizing: border-box;
-    font: 16px/1.2 "PT Sans", sans-serif;
-    background: var(--main-background);
+  box-sizing: border-box;
+  font: 16px/1.2 "PT Sans", sans-serif;
+  background: var(--main-background);
+
+  @include bp(mobile) {
+      font-size: 12px;
+  }
+
+  @include bp(tablet) {
+      font-size: 14px;
+  }
 }
 
 .socials > p > a {
-    color: white;
-    transition: color ease-in-out 0.3s;
+  color: white;
+  transition: color ease-in-out 0.3s;
 
-    &:hover{
-        color: var(--main-background);
-    }
+  &:hover {
+    color: var(--main-background);
+  }
 }
 
 h1.title {
-    width: 90%;
-    font: 4.5rem PT Serif, serif;
-    color: #FFFFFF;
-    font-weight: 900;
-    margin: 1em auto 0.5em auto;
-    letter-spacing: 0.03em;
-    z-index: 20;
-    text-align: center;
+  width: 90%;
+  font: 4.5rem PT Serif, serif;
+  color: #FFFFFF;
+  font-weight: 900;
+  margin: 1em auto 0.5em auto;
+  letter-spacing: 0.03em;
+  z-index: 20;
+  text-align: center;
 }
 
 .slogan {
-    color: white;
-    text-align: center;
-    margin: 1em auto 1em auto;
-    font-size: 2em;
-    width: 35%;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    z-index: 20;
-    font-style: italic;
-    opacity: 0;
-    transition-delay: 0.6s;
-    transition: opacity 0.8s ease-in-out;
+  color: white;
+  text-align: center;
+  margin: 1em auto 1em auto;
+  font-size: 2em;
+  width: 35%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 20;
+  font-style: italic;
+  opacity: 0;
+  transition-delay: 0.6s;
+  transition: opacity 0.8s ease-in-out;
+
+  @include bp(mobile) {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  @include bp(tablet) {
+    width: 60%;
+    margin: 1em auto;
+  }
+
+  @include bp(laptop) {
+    width: 60%;
+  }
 }
 
 body.loaded > section > p.slogan {
-    opacity: 1;
-}
-
-.forForm {
-    width: 90%;
-    margin: 1.5em auto;
-}
-
-.cta-button {
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.1em;
+  opacity: 1;
 }
 
 h2 {
-    font-size: 2.5em;
-    text-align: center;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 h3 {
-    color: var(--main-color);
-    font-size: 1.3em;
-    text-align: center;
-    font-weight: 700;
-    margin: 1em auto;
-    letter-spacing: 0.05em;
+  color: var(--main-color);
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 700;
+  margin: 1em auto;
+  letter-spacing: 0.05em;
+
+  @include bp(mobile) {
+    font-size: 2.0em;
+  }
+
+  @include bp(tablet) {
+    font-size: 2.0em;
+  }
 }
 
 div.container-element p {
-    text-align: center;
-    color: #666666;
-    font-size: 5em;
+  text-align: center;
+  color: #666666;
+  font-size: 5em;
 }
 
 nav ul li {
-    cursor: pointer;
+  cursor: pointer;
 
-    & a {
-        text-decoration: none;
-        color: var(--nav-color-text);
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
-        font-weight: 700;
-        padding: 1em 2em;
-        transition: color ease-in-out 0.3s, text-shadow ease-in-out 0.3s;
+  @include bp(mobile) {
+    margin: 1em auto;
+  }
+
+  @include bp(tablet) {
+    margin: 1em auto;
+  }
+
+  & a {
+    text-decoration: none;
+    color: var(--nav-color-text);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+    font-weight: 700;
+    padding: 1em 2em;
+    transition: color ease-in-out 0.3s, text-shadow ease-in-out 0.3s;
+
+    @include bp(mobile) {
+      padding: 0;
+      font-size: 1.8em;
     }
 
-    & a:hover {
-        color: white;
-        text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+    @include bp(tablet) {
+      padding: 0;
+      font-size: 1.8em;
     }
+
+    @include bp(laptop) {
+      padding: 1em 3.5em;
+    }
+  }
+
+  & a:hover {
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+  }
 }
 
-.offer p{
+.fas {
+  @include bp(mobile) {
+    font-size: 2.2em;
+  }
 
-    &.name{
-        font-size: 1.3em;
-        text-align: center;
-        font-weight: 700;
-        margin: 1em auto 0.2em auto;
+  @include bp(tablet) {
+    font-size: 2em;
+  }
+}
+
+.offer p {
+
+  &.name {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 700;
+    margin: 1em auto 0.2em auto;
+
+    @include bp(mobile) {
+      font-size: 1.7em;
     }
 
-    &.position {
-        font-size: 1em;
-        font-style: italic;
-        text-align: center;
-        color: var(--main-color);
-        margin: 0 auto 0.5em auto;
+    @include bp(tablet) {
+      font-size: 1.7em;
+    }
+  }
+
+  &.position {
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    color: var(--main-color);
+    margin: 0 auto 0.5em auto;
+  }
+
+  &.description {
+    color: #666666;
+    margin-top: 1.5em;
+    padding: 0 2em 1.5em 2em;
+
+    @include bp(mobile) {
+      margin-top: 1em;
+      font-size: 1.2em;
     }
 
-    &.description {
-        color: #666666;
-        margin-top: 1.5em;
-        padding: 0 2em;
+    @include bp(tablet) {
+      margin-top: 1em;
+      font-size: 1.2em;
     }
+  }
+}
+
+.forForm {
+  width: 90%;
+  margin: 1.5em auto;
+}
+
+.cta-button {
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1em;
 }
 
 .submit-button {
-    font-size: 1.1em;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 footer {
 
+  color: #FFFFFF;
+
+  & a {
+    text-decoration: none;
     color: #FFFFFF;
+  }
 
-    & a{
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-
-    & a:hover {
-        text-decoration: underline;
-    }
+  & a:hover {
+    text-decoration: underline;
+  }
 }
