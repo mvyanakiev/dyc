@@ -42,10 +42,10 @@ header {
 
 .phone {
   padding-left: 2em;
-  color: var(--header-color-text);
 
-  a {
+  a:link {
     text-decoration: none;
+    color: var(--header-color-text);
   }
 
 
@@ -88,6 +88,13 @@ header {
 
 .location {
   text-align: center;
+  cursor: pointer;
+
+
+  a:link {
+    text-decoration: none;
+    color: var(--header-color-text);
+  }
 }
 
 .head {

@@ -329,7 +329,7 @@ textarea {
   --index-title-color: rgb(24 172 186);
   --nav-color-text: #336699;
   --header-color-text: #FFFFFF;
-  --offer-background: rgb(239	239	239);
+  --offer-background: rgb(239 239 239);
   --cta-button-background: #336699;
   --cta-button-text-color: #FFFFFF
 ; }
@@ -442,11 +442,15 @@ nav ul li {
     text-shadow: 0 0 8px black; }
 
 @media (max-width: 480px) {
-  .fas {
+  .fa-user-tie,
+  .fa-ship,
+  .fa-umbrella-beach {
     font-size: 2.2em; } }
 
 @media screen and (min-width: 481px) and (max-width: 640px) {
-  .fas {
+  .fa-user-tie,
+  .fa-ship,
+  .fa-umbrella-beach {
     font-size: 2em; } }
 
 .offer p.name {
@@ -539,10 +543,10 @@ header {
       flex-direction: column; } }
 
 .phone {
-  padding-left: 2em;
-  color: var(--header-color-text); }
-  .phone a {
-    text-decoration: none; }
+  padding-left: 2em; }
+  .phone a:link {
+    text-decoration: none;
+    color: var(--header-color-text); }
   @media (max-width: 480px) {
     .phone {
       padding: 0;
@@ -575,7 +579,11 @@ header {
   padding-left: 1em; }
 
 .location {
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
+  .location a:link {
+    text-decoration: none;
+    color: var(--header-color-text); }
 
 .head {
   background-image: url("../images/head-image-background.jpg");
