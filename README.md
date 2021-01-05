@@ -1,3 +1,3 @@
-SoftUni CSS Advanced project
+#SoftUni CSS Advanced project
 
 https://mvyanakiev.github.io/dyc
